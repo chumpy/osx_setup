@@ -17,4 +17,7 @@ cd ~ && git clone git@gitlab.com:chumpy/dot_files.git
 ln -s ~/dot_files/.zshrc ~/.zshrc
 ln -s ~/dot_files/.tmux.config ~/.tmux.config
 ln -s ~/dot_files/.vimrc ~/.vimrc
+# step 5: default shell house keeping
+sudo mv /bin/zsh /bin/zsh.BAK && sudo ln -s /usr/local/Cellar/zsh/4.3.17/bin/zsh /bin/zsh
+chsh -s /bin/zsh
 
